@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiddo - Online Toy Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Kiddo Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="products" class="products-section">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="images/toy1.jpg" alt="Fun Building Blocks">
+                <h3>Fun Building Blocks</h3>
+                <p>Price: $19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/toy2.jpg" alt="Educational Puzzle">
+                <h3>Educational Puzzle</h3>
+                <p>Price: $15.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/toy3.jpg" alt="Creative Art Set">
+                <h3>Creative Art Set</h3>
+                <p>Price: $24.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/toy4.jpg" alt="Wooden Train Set">
+                <h3>Wooden Train Set</h3>
+                <p>Price: $29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/toy5.jpg" alt="Doll House">
+                <h3>Doll House</h3>
+                <p>Price: $49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/toy6.jpg" alt="Action Figures">
+                <h3>Action Figures Set</h3>
+                <p>Price: $22.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/toy7.jpg" alt="Board Game">
+                <h3>Classic Board Game</h3>
+                <p>Price: $29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/toy8.jpg" alt="Stuffed Animal">
+                <h3>Soft Stuffed Animal</h3>
+                <p>Price: $19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/toy9.jpg" alt="Remote Control Car">
+                <h3>Remote Control Car</h3>
+                <p>Price: $34.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/toy10.jpg" alt="Construction Set">
+                <h3>Construction Set</h3>
+                <p>Price: $39.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/toy11.jpg" alt="Musical Instruments Set">
+                <h3>Musical Instruments Set</h3>
+                <p>Price: $59.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/toy12.jpg" alt="Kids’ Gardening Kit">
+                <h3>Kids’ Gardening Kit</h3>
+                <p>Price: $24.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/toy13.jpg" alt="Puzzle Map of the World">
+                <h3>Puzzle Map of the World</h3>
+                <p>Price: $27.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/toy14.jpg" alt="Robotics Kit">
+                <h3>Robotics Kit</h3>
+                <p>Price: $89.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/toy15.jpg" alt="Build Your Own Fort Kit">
+                <h3>Build Your Own Fort Kit</h3>
+                <p>Price: $39.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance regarding your shopping experience, feel free to reach out!</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+    
+            <label for="order-number">Order Number:</label>
+            <input type="text" id="order-number">
+    
+            <label for="product">Product Name:</label>
+            <input type="text" id="product" placeholder="e.g., Fun Building Blocks">
+    
+            <label for="issue">Issue Type:</label>
+            <select id="issue" required>
+                <option value="" disabled selected>Select an issue</option>
+                <option value="general">General Inquiry</option>
+                <option value="shipping">Shipping Inquiry</option>
+                <option value="return">Return/Exchange Request</option>
+                <option value="damaged">Damaged Product</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea><br><br>
+    
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Kiddo. All rights reserved.</p>
+        <p>Follow us on social media!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
